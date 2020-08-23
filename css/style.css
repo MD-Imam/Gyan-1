@@ -1,0 +1,4901 @@
+/*
+------------------
+Template Name: Gyan Template
+Author: Imam Hossain
+Author Email: md.imam44788@gmail.com
+Template Designer: Imam Hossain
+Version: 1.00
+----------------
+
+---------------------------------------
+1.Table of Content of index pages
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+About us part
+Counter up part
+Courses part part
+Events part part
+Testimonial part
+Teacher part
+Blog part
+Footer part
+
+
+---------------------------------------
+2.Table of Content of about_us pages
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+About us part
+About us video part
+Footer part
+
+---------------------------------------
+3.Table of Content of our_courses pages
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Our courses part
+Footer part
+
+---------------------------------------
+4.Table of Content of our_events pages
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Events part
+Footer part
+
+
+------------------------------------------
+5.Table of Content of event_details pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Events details part
+Footer part
+
+
+------------------------------------------
+6.Table of Content of our_teachers pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Our teachers part
+Footer part
+
+
+------------------------------------------
+7.Table of Content of blog_details pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Blog details part
+Comment part
+Footer part
+
+
+------------------------------------------
+8.Table of Content of login pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Login part
+Footer part
+
+
+------------------------------------------
+9.Table of Content of registration pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Registration part
+Footer part
+
+
+------------------------------------------
+10.Table of Content of 404 pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Error part
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    outline: 0;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#error{
+    overflow-y: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+    margin: 0;
+}
+
+a,a:hover,a:focus {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.title {
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.title h2 {
+    text-align: center;
+    color: #2d3e50;
+    font-size: 31px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.title p {
+    text-align: center;
+    line-height: 24px;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    padding: 0 270px;
+}
+
+/*=========================================================
+                   header part css start
+=========================================================*/
+
+#header-top-part {
+    background: #2d3e50;
+    width:100%;
+    padding: 7px 0;
+}
+
+#header-top-part .left ul{
+    display: flex;
+}
+
+#header-top-part .left ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Arimo', sans-serif;
+    margin-right: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+#header-top-part .left ul li i{
+    margin-right: 4px;
+    font-weight: 900;
+}
+
+#header-top-part .left ul li .phn{
+    font-size: 16px;
+    transform: rotate(270deg);
+}
+
+#header-top-part .right a {
+    font-size: 15px;
+    transition: .4s;
+    color: #fff;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+}
+
+#header-top-part .right p {
+    font-size: 17px;
+    margin: 0 2px;
+    color: #fff;
+    display: inline-block;
+}
+
+#header-top-part .right a:hover {
+    color: #f5a634;
+}
+
+/*=========================================================
+                  header top part css end
+=========================================================*/
+
+/*=========================================================
+                header (navbar) part css start
+=========================================================*/
+
+header{
+    background-color: #f8f9fa;
+}
+
+header .navbar{
+    padding: 0;
+}
+
+header .navbar-brand{
+    padding-top:30px;
+    padding-bottom:35px;
+}
+
+header .navbar-toggler{
+    outline: 0;
+}
+
+header .navbar-toggler i{
+    font-size: 26px;
+    color: #fbaa33;
+}
+
+header .navbar-nav li .nav-link{
+    font-size: 16px;
+    color: #2d3e50;
+    font-family: 'Arimo', sans-serif;
+    padding-right:30px!important;
+    transition: .4s;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 25px;
+}
+
+header .navbar-nav li .nav-link:hover {
+    color: #fbaa33;
+}
+
+header .navbar-nav li .active {
+    color: #fbaa33;
+}
+
+header .get-started a {
+    text-align: center;
+    color: #fff;
+    padding:10px 18px;;
+    border-radius: 6px;
+    position: relative;
+    background:#fbaa33;
+    margin-left: 60px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+header .get-started a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    border-radius: 3px;
+    transition: .4s;
+    background:  #2d3e50;
+    content: '';
+    z-index: -1;
+}
+
+header .get-started a:hover:after{
+    width: 100%;
+}
+
+/*======= fixed manu =======*/
+
+.fixed{
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    -webkit-box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.15);
+    animation: manubar 1s;
+}
+.fixed .navbar-brand{
+    padding-top: 0;
+}
+@keyframes manubar{
+    from{
+        top:-90%;
+    }
+    to{
+        to: 0;
+    }
+}
+
+/*=========================================================
+                header (navbar) part css end
+=========================================================*/
+
+/*=========================================================
+                   banner part css start
+=========================================================*/
+
+#banner-part {
+    width: 100%;
+}
+
+#banner-part .banner {
+    background: url(../images/banner-part/banner-img1.png) no-repeat center;
+    background-size: cover;
+}
+
+#banner-part .two {
+    background: url(../images/banner-part/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#banner-part .four {
+    background: url(../images/banner-part/banner-img4.png) no-repeat center;
+    background-size: cover;
+}
+
+#banner-part .five {
+    background: url(../images/banner-part/banner-img5.png) no-repeat center;
+    background-size: cover;
+}
+
+#banner-part .overlay {
+    background: rgba(45, 62, 80, 0.5);
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 230px;
+    text-align: left;
+}
+
+#banner-part .two .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#banner-part .four .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#banner-part .five .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#banner-part h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#banner-part h1 {
+    font-size: 52px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#banner-part p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    line-height: 24px;
+    padding-right: 540px;
+    margin-bottom: 60px;
+}
+
+#banner-part .button a {
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    padding:15px 20px;
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    position: relative;
+    outline: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#banner-part .button a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#banner-part .button a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 3px;
+}
+
+#banner-part .button .start:after{
+    left:0;
+}
+
+#banner-part .button .tour:before{
+    background: #2d3e50;
+}
+
+#banner-part .button .tour:after{
+    background: #fbaa33;
+    right: 0;
+}
+
+#banner-part .button a:hover:after{
+    width: 100%;
+}
+
+#banner-part .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 58px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: .4s;
+    font-size: 28px;
+    left: 50px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 9999;
+    font-weight: 900;
+}
+
+#banner-part .prev:hover {
+    background: #fbaa33;
+    border-color: #fbaa33;
+}
+
+#banner-part .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 58px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: .4s;
+    font-size: 28px;
+    right: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 900;
+}
+
+#banner-part .next:hover {
+    background: #fbaa33;
+    border-color: #fbaa33;
+}
+
+#banner-part .support{
+    margin-top: -101px;
+}
+
+#banner-part .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#banner-part .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#banner-part .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#banner-part .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#banner-part .support .online i {
+    margin-left: 5px;
+}
+
+#banner-part .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#banner-part .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*=========================================================
+                   banner part css end
+=========================================================*/
+
+/*=========================================================
+                   about us part css start
+=========================================================*/
+
+#about-part {
+    padding-top: 100px;
+    margin-bottom: 110px;
+}
+
+#about-part ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:15px;
+}
+
+#about-part ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#about-part ul li button {
+    font-size: 0;
+    background: transparent;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #a3a19f;
+    cursor: pointer;
+    outline: 0;
+}
+
+#about-part ul .slick-active button {
+    background: #fbaa33;
+    border-color: #fbaa33
+}
+
+#about-part .item .about-slider .img{
+    outline: 0;
+}
+
+#about-part .item .about-slider .img img{
+    width: 100%;
+    clip-path: polygon(23% 0, 100% 0, 77% 100%, 0 100%);
+    height: auto;
+}
+
+#about-part .item .about-slider:before {
+    width: 350px;
+    height: 3px;
+    content: '';
+    background: #fbaa33;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border-radius: 1px;
+}
+
+#about-part .item .about-slider:after {
+    width: 350px;
+    height: 3px;
+    content: '';
+    background: #2d3e50;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    border-radius: 1px;
+}
+
+#about-part .item .la {
+    position: relative;
+}
+
+
+#about-part .item .la:before {
+    width: 10px;
+    height: 3px;
+    content: '';
+    background: #fbaa33;
+    position: absolute;
+    left: 355px;
+    top: -10px;
+    border-radius: 1px;
+}
+
+#about-part .item .la:after {
+    width: 10px;
+    height: 3px;
+    content: '';
+    background: #2d3e50;
+    position: absolute;
+    right: 355px;
+    bottom: -10px;
+    border-radius: 1px;
+}
+
+#about-part .text p {
+    text-align: left;
+    line-height: 24px;
+    color: #444444;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+}
+
+#about-part .text .last {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+#about-part .text a {
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    padding:15px;
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#about-part .text a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius:6px;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+}
+
+#about-part .text a:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    border-radius: 3px;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+}
+
+#about-part .text .know:after{
+    left: 0;
+}
+
+#about-part .text .enroll:before{
+    background: #2d3e50;
+}
+
+#about-part .text .enroll:after{
+    background: #fbaa33;
+    right: 0;
+}
+
+#about-part .text a:hover:after{
+    width: 100%;
+}
+
+/*=========================================================
+                   about us part css end
+=========================================================*/
+
+/*=========================================================
+                   counter up part css start
+=========================================================*/
+
+#counter-up-part {
+    background: url(../images/counter-up-part/counter-background.png) no-repeat center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+
+#counter-up-part h1 {
+    font-size: 39px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+#counter-up-part h2 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#counter-up-part .count img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/*=========================================================
+                   counter up part css end
+=========================================================*/
+
+/*=========================================================
+                   courses part css start
+=========================================================*/
+
+#courses-part {
+    padding-top: 100px;
+}
+
+#courses-part .container{
+    padding: 0;
+}
+
+#courses-part .title{
+    margin-bottom: -15px;
+}
+
+#courses-part .courses-part-slider .slide{
+    width: 33.33333333333333%;
+    padding: 15px;
+    padding-bottom: 35px;
+}
+
+#courses-part .courses-part-slider .item {
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 20px;
+    background: #f5f5f5;
+    position: relative;
+    border: 1px solid #f5f5f5;
+    transition: .4s;
+}
+
+#courses-part .courses-part-slider .item:hover {
+    border-color: #e1e1e1;
+    -webkit-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.15);
+}
+
+#courses-part .courses-part-slider .item a{
+    outline: 0;
+}
+
+#courses-part .item .img-up {
+    width: 100%;
+    position: relative;
+}
+
+#courses-part .item .img-up img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+#courses-part .item .img-up .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: .4s;
+}
+
+#courses-part .item .img-up .overlay i {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fbaa33;
+    cursor: pointer;
+}
+
+#courses-part .item .img-up:hover .overlay {
+    transform: scale(1);
+}
+
+#courses-part .item .people {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+#courses-part .item .people .left {
+    display: flex;
+    align-items: center;
+}
+
+#courses-part .item .people .img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#courses-part .item .people .info{
+    text-align: left;
+}
+
+#courses-part .item .people .info h3 {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+}
+
+#courses-part .item .people .info h1 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin-top: 4px;
+    text-transform: capitalize;
+}
+
+#courses-part .item .people .right{
+    text-align: right;
+}
+
+#courses-part .item .people .star i {
+    font-size: 14px;
+    color: #fbaa33;
+}
+
+#courses-part .item .people .right p {
+    color: #999999;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#courses-part .item .deg {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #222222;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+
+#courses-part .item:hover .deg {
+    color: #fbaa33;
+}
+
+#courses-part .item .details {
+    color: #444444;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 30px
+}
+
+#courses-part .item .details:after {
+    width: 100%;
+    height: 2px;
+    background: #e8e8e8;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+}
+
+#courses-part .item .class-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#courses-part .item .class-info .topic .name {
+    color: #999999;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#courses-part .item .class-info .topic .num {
+    color: #444444;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+#courses-part .item .enroll {
+    text-align: center;
+    text-transform: capitalize;
+    background:transparent;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    transition: .4s;
+    font-family: 'Arimo', sans-serif;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    overflow: hidden;
+}
+
+#courses-part .item .enroll:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    border-radius: 6px;
+    content: '';
+    z-index: -1;
+}
+
+#courses-part .item .enroll:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    border-radius: 5px;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+}
+
+#courses-part .item:hover .enroll:after{
+    width: 100%;
+}
+
+#courses-part .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d3e50;
+    transition: .4s;
+    font-size: 25px;
+    left: -50px;
+    cursor: pointer;
+    color: #2d3e50;
+    z-index: 9999;
+}
+
+#courses-part .prev:hover {
+    background: #fbaa33;
+    border-color: #fbaa33;
+    color: #fff;
+}
+
+#courses-part .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d3e50;
+    transition: .4s;
+    font-size: 25px;
+    right: -50px;
+    cursor: pointer;
+    color: #2d3e50;
+}
+
+#courses-part .next:hover {
+    background: #fbaa33;
+    border-color: #fbaa33;
+    color: #fff;
+}
+
+/*=========================================================
+                   courses part css end
+=========================================================*/
+
+/*=========================================================
+                   events part css start
+=========================================================*/
+
+#events-part {
+    padding-top: 100px;
+}
+
+#events-part .calendar img{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+#events-part .calendar img:hover{
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+#events-part .event{
+    padding: 20px;
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    transition: .4s;
+}
+
+#events-part .two{
+    margin-top: 30px;
+}
+
+#events-part .event .image {
+    position: relative;
+}
+
+#events-part .event .image img{
+    width: 100%;
+    height: auto;
+}
+
+#events-part .event .image .box {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #ff3232;
+}
+
+#events-part .event .image .box p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    width: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#events-part .event .event-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    transition: .4s;
+    padding-bottom: 10px;
+}
+
+#events-part .event .event-text .detail {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-bottom: 9px;
+}
+
+#events-part .event .event-text .loca{
+    display: inline-block;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+#events-part .event .event-text i {
+    color: #2d3e50;
+    transition: .4s;
+}
+
+#events-part .event .event-text a{
+    font-family: 'Arimo', sans-serif;
+    background: transparent;
+    transition: .4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+#events-part .event .event-text a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#events-part .event .event-text a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 3px;   
+}
+
+#events-part .event:hover .event-text a:after{
+    width: 100%;
+}
+
+#events-part .event:hover {
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    border-color: #ebebeb;
+}
+
+#events-part .event:hover h3 {
+    color: #fbaa33;
+}
+
+#events-part .event:hover i {
+    color: #fbaa33;
+}
+
+#events-part .event:hover a {
+    background: #fbaa33;
+}
+
+#events-part .two .image .box {
+    background: #3d7e34;
+}
+
+/*=========================================================
+                   events part css end
+=========================================================*/
+
+/*=========================================================
+                   testimonial part css start
+=========================================================*/
+
+#testimonial-part {
+    padding-top: 100px;
+}
+
+#testimonial-part .background{
+    padding: 60px 0;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+#testimonial-part .testimonial-slider .prev {
+    position: absolute;
+    top: 28.5%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #2d3e50;
+    transition: .4s;
+    font-size: 20px;
+    left: -50px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 9999;
+    font-weight: 700;
+}
+
+#testimonial-part .testimonial-slider .prev:hover {
+    background: #fbaa33;
+}
+
+#testimonial-part .testimonial-slider .next {
+    position: absolute;
+    top: 51.5%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #fbaa33;
+    transition: .4s;
+    font-size: 20px;
+    left: -50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+#testimonial-part .testimonial-slider .next:hover {
+    background: #2d3e50;
+}
+
+#testimonial-part .testimonial-slider .slide{
+    display: flex;
+    align-items: center;
+}
+
+#testimonial-part .img{
+    position: relative;
+    width: 50%;
+    padding: 10px 15px;
+}
+
+#testimonial-part .img img{
+    width: 100%;
+    clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+}
+
+#testimonial-part .img:before{
+    width:220px;
+    height: 3px;
+    content: '';
+    background: url(../images/testimonial-part/img-upper-line-shape.png) no-repeat center;    
+    position: absolute;
+    left: 15px;
+    top: 0px;
+}
+
+#testimonial-part .img:after{
+    width:220px;
+    height: 3px;
+    content: '';
+    background: url(../images/testimonial-part/img-lower-line-shape.png) no-repeat center;    
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+}
+
+#testimonial-part .details{
+    padding: 0 15px;
+    width: 50%;
+}
+
+#testimonial-part .details p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;
+    margin-bottom: 20px;
+}
+
+#testimonial-part .details h2 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;
+    margin-bottom: 10px;
+}
+
+#testimonial-part .details h2 span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#testimonial-part .details h2 .line {
+    font-weight: 700;
+}
+
+#testimonial-part .details .stars i {
+    font-size: 16px;
+    color: #fbaa33;
+}
+
+#testimonial-part .card {
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+#testimonial-part .card .card-header {
+    padding:0!important;
+    background: #fff;
+    text-decoration: none;
+    border: 0;
+}
+
+#testimonial-part .card .card-header h2 {
+    padding-top:0!important;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    line-height: 30px;
+    font-size: 20px!important;
+}
+
+#testimonial-part .card .card-header h2 button {
+    text-decoration: none;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    color: #fff;
+    padding:15px 0;
+    display: block;
+    padding-left: 20px;
+    background: #fbaa33;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+#testimonial-part .card .card-header h2 button i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)rotate(180deg);
+    font-size: 24px;
+    transition: .4s;
+}
+
+
+#testimonial-part .card .card-header h2 .collapsed{
+    background: #fff;
+    color: #444444;
+}
+
+#testimonial-part .card .card-header h2 .collapsed i{
+    transform: rotate(0deg) translateY(-50%);
+}
+
+/*=========================================================
+                   testimonial part css end
+=========================================================*/
+
+/*=========================================================
+                   teacher part css start
+=========================================================*/
+
+#teacher-part{
+    padding-top: 100px;
+    margin-bottom: -10px;
+}
+
+#teacher-part .teacher-slider .slick-list{
+    padding-top: 20px;
+    margin-top: -20px;
+}
+
+#teacher-part .teacher-slider .slide{
+    width:25%;
+    padding: 0 15px;
+}
+
+#teacher-part .teacher-slider .item .img{
+    width:100%;
+    transition: .4s;
+}
+
+#teacher-part .teacher-slider .item .img img{
+    width:100%;
+    height: auto;
+}
+
+#teacher-part .teacher-slider .item .text{
+    width:100%;
+    height: 115px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#teacher-part .teacher-slider .item .text .icons{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: 999;
+    opacity: 0;
+    transition: .4s;
+}
+
+#teacher-part .teacher-slider .item:hover .icons{
+    opacity: 1;
+}
+
+#teacher-part .teacher-slider .item .text .icons a{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#teacher-part .teacher-slider .item .text .icons .last{
+    margin-right: 0;
+}
+
+#teacher-part .teacher-slider .item .text .icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #2d3e50;
+    transition: .4s;
+}
+
+#teacher-part .teacher-slider .item .text .icons a i:hover{
+    background: #fbaa33;
+}
+
+#teacher-part .teacher-slider .item .text h3{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #444444;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+#teacher-part .teacher-slider .item .text p{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #444444;
+    text-transform: capitalize;
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+#teacher-part .teacher-slider .item .text p:before{
+    position: absolute;
+    bottom: -15px;
+    width: 66px;
+    height: 4px;
+    border-radius: 1px;
+    background:url(../images/teacher-part/line-shape.png) no-repeat center;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#teacher-part .teacher-slider .item:hover .text h3{
+    margin-top: 20px;
+}
+
+#teacher-part .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d3e50;
+    transition: .4s;
+    font-size: 25px;
+    left: -50px;
+    cursor: pointer;
+    color: #2d3e50;
+    z-index: 9999;
+}
+
+#teacher-part .prev:hover {
+    background: #fbaa33;
+    border-color: #fbaa33;
+    color: #fff;
+}
+
+#teacher-part .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d3e50;
+    transition: .4s;
+    font-size: 25px;
+    right: -50px;
+    cursor: pointer;
+    color: #2d3e50;
+}
+
+#teacher-part .next:hover {
+    background: #fbaa33;
+    border-color: #fbaa33;
+    color: #fff;
+}
+
+#teacher-part .teacher-slider .item:hover .img{
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+/*=========================================================
+                   teacher part css end
+=========================================================*/
+
+/*=========================================================
+                   blog part css start
+=========================================================*/
+
+/*======= blog-header-part css start =======*/
+
+#blog-header-part{
+    padding-top: 100px;
+}
+
+#blog-header-part .background{
+    background: url(../images/blog-part/blog-background.png) no-repeat center;
+    padding-top: 30px;
+    padding-bottom: 125px;
+    background-size: cover;
+    margin-bottom: -125px;
+}
+
+#blog-header-part .title h2{
+    color: #fff;
+}
+
+#blog-header-part .title p{
+    color: #fff;
+}
+
+/*======= blog-header-part css end =======*/
+
+/*======= blog-image-part css start =======*/
+
+#blog-image-part{
+    margin-bottom: -30px;
+}
+
+#blog-image-part .blog{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#blog-image-part img{
+    width:100%;
+    height:auto;
+}
+
+#blog-image-part .text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-blog-part .icons{
+    width: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    opacity: 0;
+    transition: .4s;
+}
+
+.top-blog-part .icons i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #2d3e50;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+.top-blog-part .icons i:hover{
+    background: #fbaa33;
+}
+
+.top-blog-part h2{
+    margin-top:22%;
+    transition: .4s;
+}
+
+.top-blog-part h2 a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.top-blog-part .text .website{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+    text-align: left;
+    padding: 0 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+}
+
+.top-blog-part .text .blog-footer{
+    transition: .4s;
+    opacity: 0;
+    padding-bottom: 22px;
+}
+
+.top-blog-part .text .blog-footer p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    display: inline-block;
+    padding-left: 30px;
+    text-transform: capitalize;
+}
+
+.top-blog-part .text .blog-footer p i{
+    padding-right: 4px;
+}
+
+.top-blog-part .text .blog-footer .share p{
+    padding: 0;
+}
+
+.top-blog-part .blog .text:hover .icons{
+    opacity: 1;
+    margin-right: 20px;
+}
+
+.top-blog-part .blog .text:hover h2{
+    margin-top:17%;
+}
+
+.top-blog-part .blog .text:hover .blog-footer{
+    opacity: 1;
+}
+
+.bottom-blog-part .blog .icons{
+    width: 34px;
+    margin-top:20px;
+    margin-left: auto;
+    opacity: 0;
+    transition: .4s;
+}
+
+.bottom-blog-part .icons i{
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #2d3e50;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: .4s;
+}
+
+.bottom-blog-part .blog .text:hover .icons{
+    opacity: 1;
+    margin-right: 15px;
+}
+
+.bottom-blog-part .icons i:hover{
+    background: #fbaa33;
+}
+
+.bottom-blog-part .text .details{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+}
+
+.bottom-blog-part .text .nam-l{
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.bottom-blog-part .text .link{
+    color: #fff;
+    font-weight: 400;
+    font-size:13px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+/*======= blog-image-part css and =======*/
+
+/*=========================================================
+                   blog part css end
+=========================================================*/
+
+/*=========================================================
+                   footer part css start
+=========================================================*/
+
+#footer-part{
+    padding-top: 100px;
+}
+
+#footer-part .background{
+    background: url(../images/footer-part/footer-background.png) no-repeat center;
+    background-size: cover;
+    padding-bottom:35px
+}
+
+
+#footer-part .left .logo{
+    padding: 30px 0;
+}
+
+#footer-part .left p{
+    font-size:14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+}
+
+#footer-part .left .icons{
+    margin-top: 30px;
+    display: flex;
+}
+
+#footer-part .left .icons li a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #2d3e50;
+    background: #fff;
+    border-radius: 50%;
+    transition: .4s;
+    margin-right: 20px;
+}
+
+#footer-part .left .icons li a i:hover{
+    background: #fbaa33;
+    color: #fff;
+}
+
+#footer-part h5{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    color: #fff;
+    padding-top:50px;
+    padding-bottom:40px;
+}
+
+#footer-part .middle ul{
+    margin-bottom: -35px;
+}
+
+#footer-part .middle ul li{
+    padding-bottom: 35px;
+}
+
+#footer-part .middle ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    transition: .5s;
+}
+
+#footer-part .middle ul li a:hover{
+    padding-left: 20px;
+    color: #fbaa33;
+}
+
+#footer-part .right a{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+#footer-part .right a i{
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: #2d3e50;
+    transition: .5s;
+}
+
+#footer-part .right a .mail{
+    font-size: 20px;
+}
+
+#footer-part .right a i:hover{
+    background: #fbaa33;
+    color: #fff;
+}
+
+#footer-part .right ul li p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#footer-part .right ul li p span{
+    font-size: 14px;
+    color:  #fbaa33;
+    display:block;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+
+/*========footer img part css start ========*/
+
+#footer-end-img-part{
+    width: 100%;
+}
+
+#footer-end-img-part .img{
+    position: relative;
+}
+
+#footer-end-img-part .img img{
+    width: 100%;
+    height:auto;
+}
+
+#footer-end-img-part .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.5);
+    transform: scale(0);
+    transition: .4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+#footer-end-img-part .img a{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #2d3e50;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:'Arimo', sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+    background: transparent;
+    transition: .5s;
+    z-index: 999;
+    opacity: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#footer-end-img-part .img a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    background: #fff;
+}
+
+#footer-end-img-part .img a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+}
+
+#footer-end-img-part .img:hover .overlay{
+    transform: scale(1);
+}
+
+#footer-end-img-part .img:hover a{
+    transform:translate(-50%,-50%) rotate(360deg);
+    opacity: 1;
+}
+
+#footer-end-img-part .slick-current .overlay{
+    transform: scale(1);
+}
+
+#footer-end-img-part .slick-current a{
+    transform:translate(-50%,-50%)rotate(360deg);
+    opacity: 1;
+}
+
+#footer-end-img-part .slick-current:hover a{
+    transform:translate(-50%,-50%)rotate(0deg);
+}
+
+#footer-end-img-part .img a:hover{
+    color: #fff;
+}
+
+#footer-end-img-part .img a:hover:after{
+    width: 100%;
+}
+
+/*========footer img part css end ========*/
+
+/*=========================================================
+                   footer part css end
+=========================================================*/
+
+/*======== footer-bottom-part css start ========*/
+
+#footer-bottom-part{
+    background: #2d3e50;
+    width: 100%;
+    padding: 15px 0;
+}
+
+#footer-bottom-part .design{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+}
+
+#footer-bottom-part .design span{
+    color: #fbaa33;
+}
+
+#footer-bottom-part .last{
+    color: #fbaa33;
+}
+
+#footer-bottom-part .last span{
+    font-weight: 500;
+    color: #fff;
+}
+
+/*======== footer-bottom-part css end ========*/
+
+/*======== back-top-top button css ===========*/
+
+.back-to-top{
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 32px;
+    z-index: 9999999;
+}
+
+.back-to-top i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 20px;
+    background: #fbaa33;
+    color: #fff;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.back-to-top i:hover{
+    background:#2d3e50;
+}
+
+/*=========================================================
+                     Index page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+                   About_us page css start
+=========================================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#about-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#about-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#about-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#about-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#about-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#about-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#about-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#about-page-banner .support{
+    margin-top: -101px;
+}
+
+#about-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#about-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#about-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#about-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#about-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#about-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#about-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+               about part css start
+==============================================*/
+
+.about-page-part{
+    margin-bottom: 30px !important;
+}
+
+.about-page-part .text p {
+    text-align: left;
+    line-height: 24px;
+    color: #444444;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    padding-bottom: 34px;
+}
+
+/*==============================================
+               about part css end
+==============================================*/
+
+/*==============================================
+            about video part  css start
+==============================================*/
+
+#about-video-part .text p {
+    text-align: right;
+    line-height: 24px;
+    color: #444444;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    padding-bottom: 34px;
+}
+
+#about-video-part .video{
+    position: relative;
+    width: 100%;
+}
+
+#about-video-part .video:before {
+    width: 362px;
+    height: 4px;
+    content: '';
+    background: url(../images/about-us-page/video-part/up-line-shape.png) no-repeat center;
+    position: absolute;
+    left: 0;
+    top:-10px;
+    border-radius: 1px;
+}
+
+#about-video-part .video:after {
+    width: 362px;
+    height: 4px;
+    content: '';
+    background: url(../images/about-us-page/video-part/down-line-shape.png) no-repeat center;
+    position: absolute;
+    right: 0;
+    bottom:-10px;
+    border-radius: 1px;
+}
+
+#about-video-part .video .img{
+    width: 100%;
+    clip-path: polygon(23% 0, 100% 0, 77% 100%, 0 100%);
+    overflow: hidden;
+}
+
+#about-video-part .video .img img{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+
+#about-video-part .video .img:hover img{
+    transform: scale(1.4);
+}
+
+#about-video-part .video .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+}
+
+#about-video-part .video .overlay i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fb3833;
+    font-size: 20px;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#about-video-part .text .last{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#about-video-part .enroll a {
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    padding:15px;
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#about-video-part .enroll a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius:6px;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+}
+
+#about-video-part .enroll a:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    border-radius: 3px;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    left: 0;
+}
+
+#about-video-part .enroll a:hover:after{
+    width: 100%;
+}
+
+.vbox-close{
+    margin-right:420px;
+    margin-top: 160px;
+    font-size: 30px;
+    color: #fff !important;
+}
+
+.vbox-close:hover{
+    color: red !important;
+}
+
+/*==============================================
+            about video part css end
+==============================================*/
+
+/*=========================================================
+                   About_us page css end
+=========================================================*/
+
+
+
+/*=========================================================
+                  Our_courses page css start
+=========================================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#courses-page-banner .banner{
+    background: url(../images/our_courses_page/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#courses-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#courses-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#courses-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#courses-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#courses-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#courses-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#courses-page-banner .support{
+    margin-top: -101px;
+}
+
+#courses-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#courses-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#courses-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#courses-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#courses-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#courses-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#courses-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+              courses part css start
+==============================================*/
+
+#courses{
+    padding-top: 100px;
+    margin-bottom: -50px;
+}
+
+#courses .item {
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 20px;
+    background: #f5f5f5;
+    position: relative;
+    border: 1px solid #f5f5f5;
+    transition: .4s;
+    margin-bottom: 85px;
+}
+
+#courses .item:hover {
+    border-color: #e1e1e1;
+    -webkit-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.15);
+}
+
+#courses .item a{
+    outline: 0;
+}
+
+#courses .item .img-up {
+    width: 100%;
+    position: relative;
+}
+
+#courses .item .img-up img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+#courses .item .img-up .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: .4s;
+}
+
+#courses .item .img-up .overlay i {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fbaa33;
+    cursor: pointer;
+}
+
+#courses .item .img-up:hover .overlay {
+    transform: scale(1);
+}
+
+#courses .item .people {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+#courses .item .people .left {
+    display: flex;
+    align-items: center;
+}
+
+#courses .item .people .img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#courses .item .people .info{
+    text-align: left;
+}
+
+#courses .item .people .info h3 {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+}
+
+#courses .item .people .info h1 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin-top: 4px;
+    text-transform: capitalize;
+}
+
+#courses .item .people .right{
+    text-align: right;
+}
+
+#courses .item .people .star i {
+    font-size: 14px;
+    color: #fbaa33;
+}
+
+#courses .item .people .right p {
+    color: #999999;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#courses .item .deg {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #222222;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+
+#courses .item:hover .deg {
+    color: #fbaa33;
+}
+
+#courses .item .details {
+    color: #444444;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 30px
+}
+
+#courses .item .details:after {
+    width: 100%;
+    height: 2px;
+    background: #e8e8e8;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+}
+
+#courses .item .class-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#courses .item .class-info .topic .name {
+    color: #999999;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#courses .item .class-info .topic .num {
+    color: #444444;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+#courses .item .enroll {
+    text-align: center;
+    text-transform: capitalize;
+    background:transparent;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    transition: .4s;
+    font-family: 'Arimo', sans-serif;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    overflow: hidden;
+}
+
+#courses .item .enroll:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    border-radius: 6px;
+    content: '';
+    z-index: -1;
+}
+
+#courses .item .enroll:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    border-radius: 5px;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+}
+
+#courses .item:hover .enroll:after{
+    width: 100%;
+}
+
+/*==============================================
+              courses part css end
+==============================================*/
+
+/*=========================================================
+                 Our_courses page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+                  Our_events page css start
+=========================================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#events-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#events-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#events-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#events-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#events-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#events-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#events-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#events-page-banner .support{
+    margin-top: -101px;
+}
+
+#events-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#events-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#events-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#events-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#events-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#events-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#events-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+             events part css start
+==============================================*/
+
+#events{
+    padding-top: 100px;
+    margin-bottom: -30px;
+}
+
+#events .nav-pills{
+    display: inline-flex;
+    border-radius: 28px;
+    background:#2d3e50;
+    margin-bottom: 60px !important;
+}
+
+#events .nav-pills > .nav-item > .nav-link{
+    font-size: 20px;
+    color: #fff;
+    border-radius: 28px;
+}
+
+#events .nav-pills > .nav-item .active{
+    background: #fbaa33;
+}
+
+#events .event{
+    width: 100%;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    transition: .4s;
+    margin-bottom: 30px;
+}
+
+#events .event .image {
+    position: relative;
+}
+
+#events .event .image img{
+    width: 100%;
+    height: auto;
+}
+
+#events .event .image .box {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #ff3232;
+}
+
+#events .event .image .box p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    width: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#events .event .event-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    transition: .4s;
+    padding-bottom: 10px;
+}
+
+#events .event .event-text .detail {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-bottom: 9px;
+}
+
+#events .event .event-text .loca{
+    display: inline-block;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+#events .event .event-text i {
+    color: #2d3e50;
+    transition: .4s;
+}
+
+#events .event .event-text a{
+    font-family: 'Arimo', sans-serif;
+    background: transparent;
+    transition: .4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+#events .event .event-text a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#events .event .event-text a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;   
+}
+
+#events .event:hover .event-text a:after{
+    width: 100%;
+}
+
+#events .event:hover {
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    border-color: #ebebeb;
+}
+
+#events .event:hover h3 {
+    color: #fbaa33;
+}
+
+#events .event:hover i {
+    color: #fbaa33;
+}
+
+#events .event:hover a {
+    background: #fbaa33;
+}
+
+#events .two .image .box {
+    background: #3d7e34;
+}
+
+#events .three .image .box {
+    background: #0000db;
+}
+
+#events .four .image .box {
+    background: red;
+}
+
+#events .five .image .box {
+    background: #ff009d;
+}
+
+#events .six .image .box {
+    background: #fbaa33;
+}
+
+/*==============================================
+              events part css end
+==============================================*/
+
+/*=========================================================
+                 Our_events page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+              Event details page css start
+=========================================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#event-details-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#event-details-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#event-details-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#event-details-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#event-details-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#event-details-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#event-details-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#event-details-page-banner .support{
+    margin-top: -101px;
+}
+
+#event-details-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#event-details-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#event-details-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#event-details-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#event-details-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#event-details-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#event-details-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+             event details part css start
+==============================================*/
+
+#event-details-part{
+    padding-top: 100px;
+    margin-bottom: -30px;
+}
+
+#event-details-part .event-details .img{
+    width: 100%;
+    position: relative;
+}
+
+#event-details-part .event-details .img img{
+    width: 100%;
+    height: auto;
+}
+
+#event-details-part .event-details .img .box {
+    height:100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #3d7e34;
+}
+
+#event-details-part .event-details .img .box p {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#event-details-part .event-details .event-title h1{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#event-details-part .event-details .rating i{
+    color: #ffc712;
+    font-size: 18px;
+}
+
+#event-details-part .event-details .seat p{
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;    
+}
+
+#event-details-part .event-details .details p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;
+    margin-top: 26px;
+}
+
+#event-details-part .event-details .location{
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+
+#event-details-part .event-details .location .loca{
+    display: inline-block;
+    font-size: 13px;
+    color: #979797;
+    font-family: 'Arimo', sans-serif;
+    padding-right: 26px;
+    padding-bottom: 12px;
+}
+
+#event-details-part .event-details .location i{
+    color: #2d3e50;
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+#event-details-part .event-details .location .join a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 40px;
+    font-family: 'Arimo', sans-serif;
+    background: transparent !important;
+    transition: .4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    margin-bottom: -5px;
+}
+
+#event-details-part .event-details .location .join a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#event-details-part .event-details .location .join .not:before{
+    background:#2d3e50;
+}
+
+#event-details-part .event-details .location .join a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;   
+}
+
+#event-details-part .event-details .location .join .not:after{
+    background:#fbaa33;
+}
+
+#event-details-part .event-details .location .join a:hover:after{
+    width: 100%;
+}
+
+
+
+
+#event-details-part .other h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    padding-bottom: 30px;
+}
+
+#event-details-part .event{
+    width: 100%;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    transition: .4s;
+    margin-bottom: 30px;
+}
+
+#event-details-part .event .image {
+    position: relative;
+}
+
+#event-details-part .event .image img{
+    width: 100%;
+    height: auto;
+}
+
+#event-details-part .event .image .box {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #3d7e34;
+}
+
+#event-details-part .event .image .box p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    width: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#event-details-part .event .event-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    transition: .4s;
+    padding-bottom: 10px;
+}
+
+#event-details-part .event .event-text .detail {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-bottom: 9px;
+}
+
+#event-details-part .event .event-text .loca{
+    display: inline-block;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+#event-details-part .event .event-text i {
+    color: #2d3e50;
+    transition: .4s;
+}
+
+#event-details-part .event .event-text a{
+    font-family: 'Arimo', sans-serif;
+    background: transparent;
+    transition: .4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+#event-details-part .event .event-text a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#event-details-part .event .event-text a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;   
+}
+
+#event-details-part .event:hover .event-text a:after{
+    width: 100%;
+}
+
+#event-details-part .event:hover {
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    border-color: #ebebeb;
+}
+
+#event-details-part .event:hover h3 {
+    color: #fbaa33;
+}
+
+#event-details-part .event:hover i {
+    color: #fbaa33;
+}
+
+#event-details-part .event:hover a {
+    background: #fbaa33;
+}
+
+#event-details-part .two .image .box {
+    background: #ff3232;
+}
+
+#event-details-part .three .image .box {
+    background: #0000db;
+}
+
+/*==============================================
+            event details part css end
+==============================================*/
+
+/*=========================================================
+                 Event detalis page css end
+=========================================================*/
+
+
+
+/*=========================================================
+                  Our_teachers page css start
+=========================================================*/
+
+/*==============================================
+         header (navbar) part css start
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#teachers-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#teachers-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#teachers-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#teachers-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#teachers-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#teachers-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#teachers-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#teachers-page-banner .support{
+    margin-top: -101px;
+}
+
+#teachers-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#teachers-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#teachers-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#teachers-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#teachers-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#teachers-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#teachers-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+             teachers part css start
+==============================================*/
+
+#teachers{
+    padding-top: 100px;
+    margin-bottom: -50px;
+}
+
+#teachers .item{
+    width:100%;
+    margin-bottom: 50px;
+}
+
+#teachers .item .img{
+    width:100%;
+    transition: .4s;
+}
+
+#teachers .item .img img{
+    width:100%;
+    height: auto;
+}
+
+#teachers .item .text{
+    width:100%;
+    height: 115px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#teachers .item .text .icons{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: 999;
+    opacity: 0;
+    transition: .4s;
+}
+
+#teachers .item:hover .icons{
+    opacity: 1;
+}
+
+#teachers .item .text .icons a{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#teachers .item .text .icons .last{
+    margin-right: 0;
+}
+
+#teachers .item .text .icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #2d3e50;
+    transition: .4s;
+}
+
+#teachers .item .text .icons a i:hover{
+    background: #fbaa33;
+}
+
+#teachers .item .text h3{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #444444;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+#teachers .item .text p{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #444444;
+    text-transform: capitalize;
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+#teachers .item .text p:before{
+    position: absolute;
+    bottom: -15px;
+    width: 66px;
+    height: 4px;
+    border-radius: 1px;
+    background:url(../images/teacher-part/line-shape.png) no-repeat center;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#teachers .item:hover .text h3{
+    margin-top: 20px;
+}
+
+#teachers .item .img:hover{
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+
+/*==============================================
+              teachers part css end
+==============================================*/
+
+/*=========================================================
+                 Our_teachers page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+              Blog details page css start
+=========================================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#blog-details-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#blog-details-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#blog-details-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#blog-details-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#blog-details-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#blog-details-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#blog-details-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#blog-details-page-banner .support{
+    margin-top: -101px;
+}
+
+#blog-details-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#blog-details-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#blog-details-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#blog-details-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#blog-details-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#blog-details-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#blog-details-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+            blog details part css start
+==============================================*/
+
+#blog-details{
+    padding-top: 100px;
+}
+
+#blog-details .img{
+    padding-bottom: 60px;
+}
+
+#blog-details .img img{
+    width: 100%;
+    height: auto;
+}
+
+#blog-details .post-details .blog-post-by{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fbaa33;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#blog-details .post-details .blog-post-by i{
+    font-size: 12px;
+    padding-right: 12px;
+    color: #fbaa33;
+}
+
+#blog-details .post-details .blog-poster-name{
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 24px;
+    font-family: 'Arimo', sans-serif;   
+    color: #777777;
+}
+
+#blog-details .blog-details-body .blog-details-title{
+    font-size: 24px;
+    color: #222222;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#blog-details .blog-details-body .blog-detail{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;  
+    padding-bottom: 38px;
+    padding-left: 30px;
+}
+
+#blog-details .blog-details-body .text-italic{
+    background: #f1f1f1;
+    border-left: 3px solid #fbaa33;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+#blog-details .blog-details-body .text-italic p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;  
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    line-height: 20px;
+    color: #282727;
+    font-style: italic;
+}
+
+#blog-details .blog-details-body .list{
+    padding-bottom: 35px;
+}
+
+#blog-details .blog-details-body .list ul li{
+    font-size: 16px;
+    font-family: 'Arimo', sans-serif;
+    padding-left: 30px;
+    padding-bottom: 28px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#blog-details .tag-head h3{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #151515;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#blog-details .tags .tag-details ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#blog-details .tags .tag-details ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+    padding: 10px 12px;
+    border:1px solid #dddddd;
+    transition: .4s;
+}
+
+#blog-details .tags .tag-details ul li a:hover{
+    color: #fbaa33;
+    border-color: #fbaa33;
+}
+
+#blog-details .share .share-social ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#blog-details .share{
+    margin-top: 45px;
+}
+
+#blog-details .share .share-social ul li a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    background: #fff;
+    border:1px solid #dddddd;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+#blog-details .share .share-social ul li a i:hover{
+    background: #fbaa33;
+    border-color: #fbaa33;
+    color: #fff;
+}
+
+/*==============================================
+             blog details part css end
+==============================================*/
+
+/*==============================================
+             comment part css start
+==============================================*/
+
+#comment-part{
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: -20px;
+}
+
+#comment-part::after{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 120px;
+    content: "";
+    height: 1px;
+    background: #eeeeee;
+}
+
+#comment-part .comment-head a{
+    display:block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #151515;
+    font-family: 'Arimo', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+#comment-part .comment .user-img img{
+    width: 100%;
+    height: auto;
+}
+
+#comment-part .comment .comment-details h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #151515;
+    font-family: 'Arimo', sans-serif;
+    text-transform: capitalize;
+}
+
+#comment-part .comment .comment-details h3 span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    padding-top: 5px;
+}
+
+#comment-part .comment .comment-details p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-top: 15px;
+}
+
+#comment-part .comment .comment-details a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-top: 10px;
+    transition: .4s;
+}
+
+#comment-part .comment .comment-details a i{
+    margin-right: 5px;
+}
+
+#comment-part .comment .comment-details a:hover{
+    color: #fbaa33;
+}
+
+#comment-part .comment .comment-two{
+    position: relative;
+    margin-bottom: -10px;
+}
+
+#comment-part .comment .comment-two::after{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
+    left: 0;
+    bottom:10px;
+    content: "";
+}
+
+#comment-part .comment .form-part form .form-control{
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    font-style: italic;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    resize: none;
+}
+
+#comment-part .comment .form-part form .form-control:focus::placeholder{
+    color: #444444;
+}
+
+#comment-part .comment .form-part form textarea{
+    padding-top: 10px !important;
+    height: 120px;
+}
+
+#comment-part .comment .form-part form .form-group{
+    margin-bottom: 10px;
+}
+
+#comment-part .comment .form-part form .submit button{
+    width: 100%;
+    border:0;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    line-height: 36px;
+    text-transform: capitalize;
+    position: relative;
+    background: transparent;
+    transition: .4s;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+#comment-part .comment .form-part form .submit button:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+}
+
+#comment-part .comment .form-part form .submit button:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;  
+}
+
+#comment-part .comment .form-part form .submit button:hover:after{
+    width: 100%;
+}
+
+#comment-part .comment .log-fb p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+}
+
+#comment-part .comment .log-fb p a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c8cde;;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/*==============================================
+              comment part css end
+==============================================*/
+
+/*=========================================================
+                 Blog detalis page css end
+=========================================================*/
+
+
+
+/*=========================================================
+                   Login page css start
+=========================================================*/
+
+
+/*==============================================
+             header-top part css start
+==============================================*/
+
+#header-top-part .log-active{
+    color: #fbaa33 !important;
+}
+
+/*==============================================
+              header-top part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#login-page-banner .banner{
+    background: url(../images/login_page/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#login-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#login-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#login-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#login-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#login-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#login-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#login-page-banner .support{
+    margin-top: -101px;
+}
+
+#login-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#login-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#login-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#login-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#login-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#login-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#login-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+               login css start
+==============================================*/
+
+#login-part{
+    padding-top: 100px;
+}
+
+#login-part .img-part img{
+    width: 100%;
+    height: auto;
+}
+
+#login-part .log-head h3{
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Arimo', sans-serif;
+    color: #2e3e50;
+    padding-bottom: 10px;
+}
+
+#login-part .log-head h6{
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#login-part .log-head h6:after{
+    width: 60px;
+    height: 4px;
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: #2e3e50;
+    border-radius: 5px;
+}
+
+#login-part form{
+    padding-top: 5px;
+}
+
+#login-part form .form-group{
+    position: relative;
+}
+
+#login-part form .form-group input{
+    width: 100%;
+    font-size: 16px;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    padding-left: 0;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: none;
+    border-radius: 0;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+#login-part form .form-group i{
+    position: absolute;
+    right: 1px;
+    color: #999999;
+    top: 47px;
+    font-size: 16px;
+}
+
+#login-part form .form-group .lock{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#login-part form .form-group input:focus{
+    border-color:#2e3e50;
+}
+
+#login-part form .form-group input:focus::placeholder{
+    color:#2e3e50;
+}
+
+#login-part form .form-group input:focus+i{
+    color:#2e3e50;
+}
+
+#login-part form .button button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 25px;
+}
+
+#login-part form .button button:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#login-part form .button button:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+    left: 0;
+}
+
+#login-part form .button button:hover:after{
+    width: 100%;
+}
+
+#login-part .f-s a{
+    font-size: 15px;
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+    transition: .4s;
+}
+
+#login-part .f-s .sign{
+    color: #2d3e50;
+}
+
+#login-part .f-s a:hover{
+    color: #2d3e50;
+}
+
+#login-part .f-s p{
+    font-size: 15px;
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+}
+
+/*==============================================
+               login part css end
+==============================================*/
+
+/*=========================================================
+                  Login page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+                Registration page css start
+=========================================================*/
+
+
+/*==============================================
+             header-top part css start
+==============================================*/
+
+#header-top-part .registration-active{
+    color: #fbaa33 !important;
+}
+
+/*==============================================
+              header-top part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#registration-page-banner .banner{
+    background: url(../images/login_page/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#registration-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#registration-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#registration-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#registration-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#registration-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#registration-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#registration-page-banner .support{
+    margin-top: -101px;
+}
+
+#registration-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#registration-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#registration-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#registration-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#registration-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#registration-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#registration-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+               register css start
+==============================================*/
+
+#register-part{
+    padding-top: 100px;
+}
+
+#register-part .img-part img{
+    width: 100%;
+    height: auto;
+}
+
+#register-part .log-head h3{
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Arimo', sans-serif;
+    color: #2e3e50;
+    padding-bottom: 10px;
+}
+
+#register-part .log-head h6{
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#register-part .log-head h6:after{
+    width: 60px;
+    height: 4px;
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: #2e3e50;
+    border-radius: 5px;
+}
+
+#register-part form{
+    padding-top: 5px;
+}
+
+#register-part form .form-group{
+    position: relative;
+}
+
+#register-part form .form-group input{
+    width: 100%;
+    font-size: 16px;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    padding-left: 0;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: none;
+    border-radius: 0;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+#register-part form .form-group i{
+    position: absolute;
+    right: 1px;
+    color: #999999;
+    top: 47px;
+    font-size: 16px;
+}
+
+#register-part form .name i{
+    font-size: 18px;
+}
+
+#register-part form .form-group .lock{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#register-part form .form-group input:focus{
+    border-color:#2e3e50;
+}
+
+#register-part form .form-group input:focus::placeholder{
+    color:#2e3e50;
+}
+
+#register-part form .form-group input:focus+i{
+    color:#2e3e50;
+}
+
+#register-part form .button button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 25px;
+}
+
+#register-part form .button button:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#register-part form .button button:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+    left: 0;
+}
+
+#register-part form .button button:hover:after{
+    width: 100%;
+}
+
+#register-part .f-s p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+    color: #999999;
+}
+
+#register-part .f-s .sign{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+    transition: .4s;
+    color: #2d3e50;
+}
+
+#register-part .f-s .social{
+    position: relative;
+    display: inline-block;
+}
+
+#register-part .f-s .social::after{
+    position:absolute;
+    height: 30px;
+    width: 1px;
+    content: '';
+    background: #dddddd;
+    top:5px;
+    right: 48px;
+}
+
+#register-part .f-s a i{
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #4d65aa;
+    color: #fff;
+    margin-left: 13px;
+}
+
+#register-part .f-s a .google{
+    background: #d9594f;
+}
+
+/*==============================================
+              register part css end
+==============================================*/
+
+/*=========================================================
+                 Registration page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+                    error page css start
+=========================================================*/
+
+#error-part{
+    background: url(../images/404-page/404_Page_bg.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#error-part .img{
+    width: 600px;
+    padding-top: 150px;
+    padding-bottom: 63px;
+    margin: 0 auto;
+}
+
+#error-part .img img{
+    width: 100%;
+    height: auto;
+}
+
+#error-part .goback a{
+    font-size: 18px;
+    font-weight: 400;
+    background: transparent;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    padding: 18px 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+#error-part .goback{
+    padding-left: 22px;
+}
+
+#error-part .goback a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#error-part .goback a:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 3px;
+    left: 0;
+}
+
+#error-part .goback a:hover:after{
+    width: 100%;
+}
+
+/*=========================================================
+                     error page css end
+=========================================================*/
